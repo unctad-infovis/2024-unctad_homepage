@@ -1,0 +1,23 @@
+.top_bar_container {
+  .top_bar {
+    background-color: #f1f1f1;
+    border-bottom: 4px solid #009edb;
+    font-size: 12px;
+    .row {
+      .col {
+        .language_selector_container {
+          a {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          div.active {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

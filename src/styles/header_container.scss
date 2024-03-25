@@ -1,0 +1,20 @@
+.header_container {
+  .row {
+    .col {
+      .logo_container {
+        .logo {
+          height: 90px;
+        }
+      }
+      .login_container {
+        a {
+          color: #000;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

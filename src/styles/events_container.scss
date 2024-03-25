@@ -1,0 +1,41 @@
+.events_container {
+  >.row {
+    background-color: rgba(1,72, 136, 1.0);
+    color: #fff;
+    .main_event {
+      background-color: rgba(227, 237, 246, 1.0);
+      color: rgba(1,72, 136, 1.0);
+      h3 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+    }
+    img {
+      border: 10px solid #fff;
+      width: 100%
+    }
+    .all {
+      background-color: rgba(227, 237, 246, 1.0);
+      border: 0;
+      color: rgba(1,72, 136, 1.0);
+      display: block;
+      font-weight: 600;
+      height: 60px;
+      text-transform: uppercase;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+}

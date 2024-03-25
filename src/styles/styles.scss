@@ -1,0 +1,27 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:600.css');
+// Import all of Bootstrap's CSS
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import './colors.scss';
+
+#app-root-2024-unctad_homepage {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .content {
+    background-color: rgba(192, 208, 221, 1);
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+  }
+  @import './top_bar.scss';
+  @import './header_container.scss';
+  @import './menu_container.scss';
+  @import './highlight_container.scss';
+  @import './publications_container.scss';
+  @import './datavisualisations_container.scss';
+  @import './media_container.scss';
+  @import './news_container.scss';
+  @import './events_container.scss';
+  @import './statements_container.scss';
+}

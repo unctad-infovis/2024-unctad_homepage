@@ -1,0 +1,29 @@
+.media_container {
+  img {
+    width: 100%;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+  }
+  .all {
+    background-color: rgba(197,223,240,1);
+    border: 0;
+    display: block;
+    font-weight: 600;
+    height: 60px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .youtube_container {
+    aspect-ratio: 16/9;
+    iframe {
+      aspect-ratio: 16/9;
+    }
+  }
+  .podbean_podcast {
+    width: 100%
+  }
+}

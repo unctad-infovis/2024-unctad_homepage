@@ -1,38 +1,53 @@
-import React, { /* useState, */useEffect } from 'react';
-import '../styles/styles.less';
+import React, { } from 'react';
+import '../styles/styles.scss';
 
-// Load helpers.
-// import formatNr from './helpers/FormatNr.js';
-// import roundNr from './helpers/RoundNr.js';
+// Import all of Bootstrap's JS
+// import * as bootstrap from 'bootstrap';
 
-// const appID = '#app-root-2024-unctad_homepage';
+// Load components.
+import TopBar from './components/TopBar.jsx';
+import Header from './components/Header.jsx';
+import Menu from './components/Menu.jsx';
+import Highlight from './components/Highlight.jsx';
+import Publications from './components/Publications.jsx';
+import Datavisualisations from './components/Datavisualisations.jsx';
+import Media from './components/Media.jsx';
+import News from './components/News.jsx';
+import Events from './components/Events.jsx';
+import Statements from './components/Statements.jsx';
 
-const App = () => {
-  // Data states.
-  // const [data, setData] = useState(false);
-
-  useEffect(() => {
-    // const data_file = (window.location.href.includes('unctad.org')) ? '/sites/default/files/data-file/2024-unctad_homepage.json' : './assets/data/data.json';
-    try {
-      // fetch(data_file)
-      //   .then((response) => {
-      //     if (!response.ok) {
-      //       throw Error(response.statusText);
-      //     }
-      //     return response.text();
-      //   })
-      //   .then(body => setData(JSON.parse(body)));
-    }
-    catch (error) {
-      console.error(error);
-    }
-  }, []);
-
+function App() {
   return (
-    <div className="app">
-      <noscript>Your browser does not support JavaScript!</noscript>
-    </div>
+    <>
+      <TopBar />
+      <Header />
+      <Menu />
+      <Highlight />
+      <div className="row container-xxl me-auto ms-auto">
+        <div className="row m-auto">
+          <div className="col content pt-3">
+            <div className="row m-auto background h-100">
+              <div className="col">
+                <div className="row justify-content-evenly">
+                  <div className="col-7">
+                    <Publications />
+                    <Datavisualisations />
+                    <Media />
+                  </div>
+                  <div className="col-4">
+                    <News />
+                    <Events />
+                    <Statements />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </>
   );
-};
+}
 
 export default App;
