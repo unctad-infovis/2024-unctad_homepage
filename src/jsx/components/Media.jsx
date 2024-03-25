@@ -65,9 +65,12 @@ function App() {
               }
             </div>
           </div>
-          <div className="row d-flex justify-content-end text-end">
-            <div className="col col-6 me-3 mb-3">
-              <button href="link" className="all" type="button">All visualisations</button>
+          <div className="row d-flex justify-content-end">
+            <div className="col col-6 mb-3">
+              <button href="link" className="all" type="button">All podcast</button>
+            </div>
+            <div className="col col-6  mb-3">
+              <button href="link" className="all" type="button">All videos</button>
             </div>
           </div>
         </div>
