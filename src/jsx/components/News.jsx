@@ -1,5 +1,8 @@
 import React, { } from 'react';
 
+// https://www.npmjs.com/package/uuid4
+import uuid4 from 'uuid4';
+
 function App() {
   return (
     <div className="news_container mb-3">
@@ -25,7 +28,7 @@ function App() {
       </div>
       {
         Array(8).fill('').map(() => (
-          <div className="row">
+          <div className="row" key={uuid4()}>
             <div className="col mb-3">
               <div className="row">
                 <div className="col">

@@ -1,5 +1,8 @@
 import React, { } from 'react';
 
+// https://www.npmjs.com/package/uuid4
+import uuid4 from 'uuid4';
+
 function App() {
   return (
     <div className="datavisualisations_container">
@@ -24,7 +27,7 @@ function App() {
             <div className="row d-flex flex-wrap align-content-center h-100 m-auto">
               {
                 Array(2).fill('').map(() => (
-                  <div className="w-50 pe-4">
+                  <div className="w-50 pe-4" key={uuid4()}>
                     <div className="row d-flex flex-row pb-3 mb-3 pt-3 justify-content-between" style={{ backgroundColor: 'rgba(245,245,245,1)' }}>
                       <div className="col">
                         <div className="row">

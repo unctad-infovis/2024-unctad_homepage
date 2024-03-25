@@ -1,5 +1,8 @@
 import React, { } from 'react';
 
+// https://www.npmjs.com/package/uuid4
+import uuid4 from 'uuid4';
+
 function App() {
   return (
     <div className="media_container">
@@ -13,7 +16,7 @@ function App() {
           <div className="row">
             <div className="col">
               <div className="youtube_container">
-                <iframe width="100%" src="https://www.youtube.com/embed/SYgByZpF1zY?si=Il34uLhE2LSWMx9n" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className="youtube_video" />
+                <iframe width="100%" src="https://www.youtube.com/embed/SYgByZpF1zY?si=Il34uLhE2LSWMx9n" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="youtube_video" />
               </div>
             </div>
           </div>
@@ -27,7 +30,7 @@ function App() {
               {
                 ['video', 'podcast', 'podcast', 'video'].map((type) => ((type === 'video')
                   ? (
-                    <div className="w-50 pe-4">
+                    <div className="w-50 pe-4" key={uuid4()}>
                       <div className="row d-flex flex-row pb-3 mb-3 pt-3 justify-content-between" style={{ backgroundColor: 'rgba(245,245,245,1)' }}>
                         <div className="col">
                           <div className="row">
@@ -45,12 +48,12 @@ function App() {
                     </div>
                   )
                   : (
-                    <div className="w-50 pe-4">
+                    <div className="w-50 pe-4" key={uuid4()}>
                       <div className="row d-flex flex-row pb-3 mb-3 pt-3 justify-content-between" style={{ backgroundColor: 'rgba(245,245,245,1)' }}>
                         <div className="col">
                           <div className="row">
                             <div className="youtube_container">
-                              <iframe width="100%" src="https://www.youtube.com/embed/SYgByZpF1zY?si=Il34uLhE2LSWMx9n" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className="youtube_video" />
+                              <iframe width="100%" src="https://www.youtube.com/embed/SYgByZpF1zY?si=Il34uLhE2LSWMx9n" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="youtube_video" />
                             </div>
                           </div>
                           <div className="row">

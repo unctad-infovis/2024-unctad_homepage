@@ -1,5 +1,8 @@
 import React, { } from 'react';
 
+// https://www.npmjs.com/package/uuid4
+import uuid4 from 'uuid4';
+
 function App() {
   return (
     <div className="highlight_container">
@@ -21,7 +24,7 @@ function App() {
               <div className="row d-flex flex-wrap align-content-center secondary_highlight_container h-100 m-4 position-relative">
                 {
                   ['pt-2 ps-2 pe-1 pb-1', 'pt-2 ps-1 pe-2 pb-1', 'pt-1 ps-2 pe-1 pb-2', 'pt-1 ps-1 pe-2 pb-2'].map((padding) => (
-                    <div className={`w-50 ${padding}`}>
+                    <div className={`w-50 ${padding}`} key={uuid4()}>
                       <a href="link">
                         <div className="block_content p-2">
                           <img src="./assets/img/image.jpg" alt="Desc" className="mb-2" />
