@@ -4,15 +4,38 @@
 
 @import './colors.scss';
 
+$titlesize_big: 38px;
+$titlesize_medium: 22px;
+$titlesize_small: 18px;
+$titlesize_verysmall: 14px;
+
+@font-face {
+  font-family: 'Helvetica Neue Heavy Condensed';
+  src: url('assets/fonts/HelveticaNeueLTStd-HvCn.otf');
+}
+@font-face {
+  font-family: 'Helvetica Neue Heavy';
+  src: url('assets/fonts/HelveticaNeueLTStd-Hv.otf');
+}
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  src: url('assets/fonts/HelveticaNeueLTStd-Md.otf');
+}
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url('assets/fonts/HelveticaNeueLTStd-Lt.otf');
+}
+
 #app-root-2024-unctad_homepage {
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue Light';
   .content {
     background-color: rgba(192, 208, 221, 1);
   }
   h2 {
-    font-size: 30px;
+    font-size: $titlesize_big;
+    font-family: 'Helvetica Neue Heavy Condensed';
     font-weight: 600;
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
   @import './top_bar.scss';
   @import './header_container.scss';

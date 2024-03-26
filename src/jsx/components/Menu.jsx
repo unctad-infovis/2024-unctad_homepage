@@ -20,7 +20,7 @@ function App() {
               <ul className="menu_items_container">
                 {
                   ['About »', 'Statistics and data »', 'Publications »', 'Technical assistance »', 'Meetings and events »', 'Media centre »'].map((text) => (
-                    <li className="menu_item_container" key={uuid4()}><a href="link" className="menu_item pe-3 ps-3 pt-2 pb-2" onFocus={(event) => menu(event, text)} onMouseOver={(event) => menu(event, text)}>{text}</a></li>
+                    <li className="menu_item_container" key={uuid4()}><a href="link" className="menu_item pe-3 ps-3" onFocus={(event) => menu(event, text)} onMouseOver={(event) => menu(event, text)}>{text}</a></li>
                   ))
                 }
               </ul>

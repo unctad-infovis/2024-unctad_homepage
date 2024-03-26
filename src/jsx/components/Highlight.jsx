@@ -28,15 +28,17 @@ function App() {
                 {
                   ['pt-2 ps-2 pe-1 pb-1', 'pt-2 ps-1 pe-2 pb-1', 'pt-1 ps-2 pe-1 pb-2', 'pt-1 ps-1 pe-2 pb-2'].map((padding) => (
                     <div className={`w-50 ${padding}`} key={uuid4()}>
-                      <a href="link">
-                        <div className="block_content p-2">
-                          <div className="image_container">
-                            <ShareContainer url="https://unctad.org" />
+                      <div className="block_content p-2">
+                        <div className="image_container">
+                          <ShareContainer url="https://unctad.org" />
+                          <a href="link" className="content_link">
                             <img src="./assets/img/image.jpg" alt="Desc" className="mb-2" />
-                          </div>
-                          <h3 className="ms-3">Making artificial intelligence work better for consumers and societies</h3>
+                          </a>
                         </div>
-                      </a>
+                        <a href="link" className="content_link">
+                          <h3 className="ms-2 me-2">Making artificial intelligence work better for consumers and societies</h3>
+                        </a>
+                      </div>
                     </div>
                   ))
                 }

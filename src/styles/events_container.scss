@@ -6,21 +6,21 @@
       background-color: rgba(227, 237, 246, 1.0);
       color: rgba(1,72, 136, 1.0);
       h3 {
-        font-size: 22px;
+        font-size: $titlesize_medium;
         font-weight: 600;
       }
       h4 {
-        font-size: 16px;
+        font-size: $titlesize_small;
       }
     }
     h3 {
-      font-size: 18px;
+      font-family: 'Helvetica Neue Medium';
+      font-size: $titlesize_small;
       font-weight: 600;
     }
     h4 {
+      font-family: 'Helvetica Neue Light';
       font-size: 14px;
-      font-weight: 600;
-      margin: 0;
     }
     img {
       border: 10px solid #fff;
