@@ -16,11 +16,12 @@
   }
   .share_buttons {
     display: none;
-    right: 60px;
+    font-size: 0;
     position: absolute;
+    right: 60px;
+    text-align: right;
     top: 5px;
     width: 132px;
-    text-align: right;
     .share_button {
       display: inline-block;
       position: relative;
@@ -33,7 +34,7 @@
         font-size: 12px;
         height: 40px;
         line-height: 30px;
-        margin: 0 2px;
+        margin: 2px 2px;
         text-align: center;
         text-decoration: none;
         width: 40px;

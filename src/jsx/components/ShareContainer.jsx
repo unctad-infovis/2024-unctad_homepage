@@ -55,7 +55,7 @@ function App({ url }) {
         <div className="share_button"><a href={`whatsapp://send?text=${encodeURIComponent(url)}`}><img src="./assets/img/icn/icon_whatsapp.png" alt="Whatspp" /></a></div>
         <div className="share_button"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`} onClick={(event) => shareButton(event)}><img src="./assets/img/icn/icon_linkedin.png" alt="LinkedIn" /></a></div>
         <div className="share_button">
-          <a href="CO" onClick={(event) => copyToClipboard(event, url)}>CO</a>
+          <a href="CO" onClick={(event) => copyToClipboard(event, url)}><img src="./assets/img/icn/icon_share.png" alt="Share" /></a>
           <div className="copied_message" ref={messageRef}>Copied to clipboard</div>
         </div>
       </div>
