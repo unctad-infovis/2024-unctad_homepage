@@ -1,0 +1,55 @@
+.share_container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  .icon_container {
+    button {
+      margin-top: 5px;
+      background-color: transparent;
+      border: 0;
+      height: 30px;
+    }
+  }
+  .share_buttons {
+    display: none;
+    left: -170px;
+    position: absolute;
+    top: 5px;
+    .share_button {
+      display: inline-block;
+      position: relative;
+      a {
+        background-color: #009edb;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 2px;
+        text-align: center;
+        text-decoration: none;
+        width: 30px;
+        &:hover {
+          background-color: #004987;
+        }
+      }
+      .copied_message {
+        font-size: 12px;
+        left: -30px;
+        line-height: 12px;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        text-shadow: 1px 1px 5px #f1f1f1;
+        text-transform: uppercase;
+        top: 35px;
+        transition: opacity 1s;
+        width: 100px;
+        &.active {
+          transition: opacity 0s;
+        }
+      }
+    }
+  }
+}
