@@ -3,6 +3,9 @@ import React, { } from 'react';
 // https://www.npmjs.com/package/uuid4
 import uuid4 from 'uuid4';
 
+// Load components.
+import ShareContainer from './ShareContainer.jsx';
+
 function App() {
   return (
     <div className="highlight_container">
@@ -27,7 +30,10 @@ function App() {
                     <div className={`w-50 ${padding}`} key={uuid4()}>
                       <a href="link">
                         <div className="block_content p-2">
-                          <img src="./assets/img/image.jpg" alt="Desc" className="mb-2" />
+                          <div className="image_container">
+                            <ShareContainer url="https://unctad.org" />
+                            <img src="./assets/img/image.jpg" alt="Desc" className="mb-2" />
+                          </div>
                           <h3 className="ms-3">Making artificial intelligence work better for consumers and societies</h3>
                         </div>
                       </a>
