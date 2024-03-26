@@ -11,12 +11,12 @@ function App() {
         </div>
         <div className="col text-end d-flex flex-column justify-content-between">
           <div className="quick_links mt-2 d-flex justify-content-end">
-            <a href="quick_link" className="quick_link quick_link_1 ms-1 text-center d-flex align-items-center justify-content-center"><div>UNCTAD 60</div></a>
-            <a href="quick_link" className="quick_link quick_link_2 ms-1 text-center d-flex align-items-center justify-content-center"><div>Global Supply Chain Forum</div></a>
-            <a href="quick_link" className="quick_link quick_link_3 ms-1 text-center d-flex align-items-center justify-content-center"><div>Global Crisis</div></a>
+            <a href="#quick_link" className="quick_link quick_link_1 ms-2 text-center d-flex align-items-center justify-content-center"><div>UNCTAD 60</div></a>
+            <a href="#quick_link" className="quick_link quick_link_2 ms-2 text-center d-flex align-items-center justify-content-center"><div>Global Supply Chain Forum</div></a>
+            <a href="#quick_link" className="quick_link quick_link_3 ms-2 text-center d-flex align-items-center justify-content-center"><div>Global Crisis</div></a>
           </div>
           <div className="login_container">
-            <a href="/login/">Login</a>
+            <a href="#login">Login</a>
           </div>
         </div>
       </div>

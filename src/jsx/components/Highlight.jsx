@@ -17,8 +17,8 @@ function App() {
                 <div className="main_highlight_container m-4">
                   <div className="background position-absolute h-40" />
                   <div className="headlines position-relative">
-                    <h3>Global trade growth returs but outlook for 2023 is poor</h3>
-                    <h4>Read the full story</h4>
+                    <h3><a href="#link">Global trade growth returs but outlook for 2023 is poor</a></h3>
+                    <h4><a href="#link">Read the full story</a></h4>
                   </div>
                 </div>
               </div>
@@ -31,11 +31,11 @@ function App() {
                       <div className="block_content p-2">
                         <div className="image_container">
                           <ShareContainer url="https://unctad.org" />
-                          <a href="link" className="content_link">
+                          <a href="#link" className="content_link">
                             <img src="./assets/img/image.jpg" alt="Desc" className="mb-2" />
                           </a>
                         </div>
-                        <a href="link" className="content_link">
+                        <a href="#link" className="content_link">
                           <h3 className="ms-2 me-2">Making artificial intelligence work better for consumers and societies</h3>
                         </a>
                       </div>

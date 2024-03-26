@@ -26,19 +26,19 @@ function App() {
           <div className="row p-2">
             <div className="col">
               <h4>9 April 2024</h4>
-              <h3>Awesome title for a main news story</h3>
+              <h3>Awesome title for an event</h3>
             </div>
           </div>
         </div>
       </div>
       {
-        Array(8).fill('').map(() => (
+        Array(6).fill('').map(() => (
           <div className="row" key={uuid4()}>
             <div className="col mb-3">
               <div className="row">
                 <div className="col">
                   <h4>9 April 2024</h4>
-                  <h3>Awesome title for a main news story</h3>
+                  <h3>Awesome title for an event</h3>
                 </div>
               </div>
             </div>

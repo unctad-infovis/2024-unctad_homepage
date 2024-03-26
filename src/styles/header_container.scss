@@ -9,14 +9,45 @@
       .quick_links {
         .quick_link {
           background-color: #daebf7;
-          color: #000;
-          font-size: 16px;
+          color: $unbluedarktext;
+          font-family: 'Helvetica Neue Medium';
+          font-size: 14px;
           height: 50px;
-          line-height: 16px;
-          padding: 0 20px 0 60px;
+          line-height: 14px;
+          padding: 5px 20px 0 65px;
           position: relative;
           text-decoration: none;
-          width: 190px;
+          text-transform: uppercase;
+          width: 200px;
+          &:hover {
+            color: #000;
+          }
+          &:before {
+            background-image: url('./assets/img/unctad_60.png');
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            content: '';
+            height: 34px;
+            left: 20px;
+            position: absolute;
+            top: 8px;
+            width: 100%;
+          }
+          &.quick_link_1 {
+            &:before {
+              background-image: url('./assets/img/unctad_60.png');
+            }
+          }
+          &.quick_link_2 {
+            &:before {
+              background-image: url('./assets/img/global_supply_chain_forum.png');
+            }
+          }
+          &.quick_link_3 {
+            &:before {
+              background-image: url('./assets/img/global_crisis.png');
+            }
+          }
           div {
             &:before {
               border-bottom: 12px solid transparent;

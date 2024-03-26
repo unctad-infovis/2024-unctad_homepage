@@ -23,14 +23,28 @@
             color: #fff;
             height: 40%;
             z-index: 2;
+            &:hover {
+              a {
+                text-decoration: underline;
+              }
+            }
             h3 {
               font-family: 'Helvetica Neue Heavy Condensed';
               font-size: $titlesize_big;
               font-weight: 600;
+              a {
+                color: #fff;
+                text-decoration: none;
+              }
+  
             }
             h4 {
               font-family: 'Helvetica Neue Heavy Condensed';
               font-size: $titlesize_medium;
+              a {
+                color: #fff;
+                text-decoration: none;
+              }
             }
           }
         }
@@ -43,12 +57,14 @@
                 display: flex;
                 flex-direction: column;
                 height: 100%;
+                &:hover {
+                  .content_link {
+                    text-decoration: underline;
+                  }
+                }
                 .content_link {
                   color: #000;
                   text-decoration: none;
-                  &:hover {
-                    text-decoration: underline;
-                  }
                 }
                 .image_container {
                   position: relative;

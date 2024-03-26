@@ -33,7 +33,7 @@ function App() {
               <div className="row">
                 <div className="col">
                   <h4>9 April 2024</h4>
-                  <h3>Awesome title for a main news story</h3>
+                  <h3>Awesome title for a news story</h3>
                 </div>
               </div>
             </div>
