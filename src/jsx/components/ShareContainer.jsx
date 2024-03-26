@@ -20,15 +20,15 @@ function App({ url }) {
     document.querySelectorAll('.share_container').forEach((el) => {
       if (el.querySelector('.share_buttons') !== shareButtonsRef.current) {
         el.querySelector('.share_buttons').style.display = 'none';
-        el.querySelector('.icon_container button').innerHTML = 'Share';
+        el.querySelector('.icon_container button img').src = './assets/img/icn/icon_share.png';
       }
     });
     if (shareButtonsRef.current.style.display === 'none') {
       shareButtonsRef.current.style.display = 'block';
-      iconButtonsRef.current.innerHTML = 'Close';
+      iconButtonsRef.current.querySelector('img').src = './assets/img/icn/icon_close.png';
     } else {
       shareButtonsRef.current.style.display = 'none';
-      iconButtonsRef.current.innerHTML = 'Share';
+      iconButtonsRef.current.querySelector('img').src = './assets/img/icn/icon_share.png';
     }
     event.preventDefault();
   };
@@ -47,12 +47,13 @@ function App({ url }) {
 
   return (
     <div className="share_container">
-      <div className="icon_container" onClick={(event) => show(event)} onKeyDown={(event) => show(event)} role="presentation"><button type="button" ref={iconButtonsRef}>Share</button></div>
+      <div className="icon_container" onClick={(event) => show(event)} onKeyDown={(event) => show(event)} role="presentation"><button type="button" ref={iconButtonsRef}><img src="./assets/img/icn/icon_share.png" alt="Share" /></button></div>
       <div className="share_buttons" ref={shareButtonsRef} style={{ display: 'none' }}>
-        <div className="share_button"><a href={`https://www.facebook.com/sharer/sharer.php?u=${(url)}`} onClick={(event) => shareButton(event)}>FB</a></div>
-        <div className="share_button"><a href={`https://twitter.com/share?url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent('unctad')}&text=${encodeURIComponent('')}`} onClick={(event) => shareButton(event, url)}>TW</a></div>
-        <div className="share_button"><a href={`whatsapp://send?text=${encodeURIComponent(url)}`}>WA</a></div>
-        <div className="share_button"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`} onClick={(event) => shareButton(event)}>LI</a></div>
+        <div className="share_button"><a href={`https://www.facebook.com/sharer/sharer.php?u=${(url)}`} onClick={(event) => shareButton(event)}><img src="./assets/img/icn/icon_facebook.png" alt="Facebook" /></a></div>
+        <div className="share_button"><a href={`https://twitter.com/share?url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent('unctad')}&text=${encodeURIComponent('')}`} onClick={(event) => shareButton(event, url)}><img src="./assets/img/icn/icon_x.png" alt="X" /></a></div>
+        <div className="share_button"><a href={`https://twitter.com/share?url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent('unctad')}&text=${encodeURIComponent('')}`} onClick={(event) => shareButton(event, url)}><img src="./assets/img/icn/icon_instagram.png" alt="Instagram" /></a></div>
+        <div className="share_button"><a href={`whatsapp://send?text=${encodeURIComponent(url)}`}><img src="./assets/img/icn/icon_whatsapp.png" alt="Whatspp" /></a></div>
+        <div className="share_button"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`} onClick={(event) => shareButton(event)}><img src="./assets/img/icn/icon_linkedin.png" alt="LinkedIn" /></a></div>
         <div className="share_button">
           <a href="CO" onClick={(event) => copyToClipboard(event, url)}>CO</a>
           <div className="copied_message" ref={messageRef}>Copied to clipboard</div>

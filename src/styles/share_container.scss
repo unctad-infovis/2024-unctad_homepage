@@ -8,13 +8,19 @@
       background-color: transparent;
       border: 0;
       height: 30px;
+      img {
+        height: 40px;
+        width: 40px;
+      }
     }
   }
   .share_buttons {
     display: none;
-    left: -170px;
+    right: 60px;
     position: absolute;
     top: 5px;
+    width: 132px;
+    text-align: right;
     .share_button {
       display: inline-block;
       position: relative;
@@ -25,12 +31,12 @@
         color: #fff;
         display: inline-block;
         font-size: 12px;
-        height: 30px;
+        height: 40px;
         line-height: 30px;
         margin: 0 2px;
         text-align: center;
         text-decoration: none;
-        width: 30px;
+        width: 40px;
         &:hover {
           background-color: #004987;
         }
