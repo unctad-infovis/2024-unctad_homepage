@@ -31,6 +31,22 @@ $titlesize_verysmall: 14px;
   .content {
     background-color: rgba(192, 208, 221, 1);
   }
+  .with_border {
+    &:after {
+      border-bottom: 2px solid rgba(1,72, 136, 1.0);
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  .with_border_light {
+    &:after {
+      border-bottom: 2px solid rgba(227, 237, 246, 1.0);
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
   h2 {
     font-size: $titlesize_big;
     font-family: 'Helvetica Neue Heavy Condensed';

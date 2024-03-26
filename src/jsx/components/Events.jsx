@@ -36,7 +36,7 @@ function App() {
           <div className="row" key={uuid4()}>
             <div className="col mb-3">
               <div className="row">
-                <div className="col">
+                <div className="col with_border_light">
                   <h4>9 April 2024</h4>
                   <h3>Awesome title for an event</h3>
                 </div>

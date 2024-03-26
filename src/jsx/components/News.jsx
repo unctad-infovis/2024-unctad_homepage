@@ -27,11 +27,11 @@ function App() {
         </div>
       </div>
       {
-        Array(8).fill('').map(() => (
+        Array(5).fill('').map(() => (
           <div className="row" key={uuid4()}>
             <div className="col mb-3">
               <div className="row">
-                <div className="col">
+                <div className="col with_border">
                   <h4>9 April 2024</h4>
                   <h3>Awesome title for a news story</h3>
                 </div>

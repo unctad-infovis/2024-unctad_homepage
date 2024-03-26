@@ -34,7 +34,7 @@ function App() {
               {
                 Array(4).fill('').map(() => (
                   <div className="w-50 pe-4" key={uuid4()}>
-                    <div className="row d-flex flex-row pb-3 mb-3 pt-3 justify-content-between block_content" style={{ backgroundColor: 'rgba(226,236,246,1)' }}>
+                    <div className="row d-flex flex-row mb-3 pt-3 pb-3 justify-content-between block_content " style={{ backgroundColor: 'rgba(226,236,246,1)' }}>
                       <div className="col-5">
                         <a href="#link">
                           <img src="./assets/img/image4.jpg" alt="Publication" className="cover" />
