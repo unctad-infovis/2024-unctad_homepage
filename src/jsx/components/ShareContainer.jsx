@@ -51,11 +51,11 @@ function App({ url }) {
       <div className="share_buttons" ref={shareButtonsRef} style={{ display: 'none' }}>
         <div className="share_button"><a href={`https://www.facebook.com/sharer/sharer.php?u=${(url)}`} onClick={(event) => shareButton(event)}><img src="./assets/img/icn/icon_facebook.png" alt="Facebook" /></a></div>
         <div className="share_button"><a href={`https://twitter.com/share?url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent('unctad')}&text=${encodeURIComponent('')}`} onClick={(event) => shareButton(event, url)}><img src="./assets/img/icn/icon_x.png" alt="X" /></a></div>
-        <div className="share_button"><a href={`https://twitter.com/share?url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent('unctad')}&text=${encodeURIComponent('')}`} onClick={(event) => shareButton(event, url)}><img src="./assets/img/icn/icon_instagram.png" alt="Instagram" /></a></div>
+        {/* <div className="share_button"><a href={`https://twitter.com/share?url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent('unctad')}&text=${encodeURIComponent('')}`} onClick={(event) => shareButton(event, url)}><img src="./assets/img/icn/icon_instagram.png" alt="Instagram" /></a></div> */}
         <div className="share_button"><a href={`whatsapp://send?text=${encodeURIComponent(url)}`}><img src="./assets/img/icn/icon_whatsapp.png" alt="Whatspp" /></a></div>
         <div className="share_button"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`} onClick={(event) => shareButton(event)}><img src="./assets/img/icn/icon_linkedin.png" alt="LinkedIn" /></a></div>
         <div className="share_button">
-          <a href="CO" onClick={(event) => copyToClipboard(event, url)}><img src="./assets/img/icn/icon_share.png" alt="Share" /></a>
+          <a href="CO" onClick={(event) => copyToClipboard(event, url)}><img src="./assets/img/icn/icon_link.png" alt="Share" /></a>
           <div className="copied_message" ref={messageRef}>Copied to clipboard</div>
         </div>
       </div>
