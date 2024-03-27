@@ -19,7 +19,7 @@ function App() {
             <div className="col col-10">
               <ul className="menu_items_container">
                 {
-                  ['About »', 'Statistics and data »', 'Publications »', 'Technical assistance »', 'Meetings and events »', 'Media centre »'].map((text) => (
+                  ['About »', 'Publications »', 'Statistics and data »', 'Technical assistance »', 'Meetings and events »', 'Media centre »'].map((text) => (
                     <li className="menu_item_container" key={uuid4()}><a href="link" className="menu_item pe-3 ps-3" onFocus={(event) => menu(event, text)} onMouseOver={(event) => menu(event, text)}>{text}</a></li>
                   ))
                 }
@@ -34,7 +34,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="megamenu_container"><div className="col">{menuContent}</div></div>
+        <div className="megamenu_container"><div className="col  container-xxl">{menuContent}</div></div>
       </div>
     </div>
   );
