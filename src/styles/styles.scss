@@ -34,6 +34,12 @@ $titlesize_verysmall: 14px;
   font-family: 'Helvetica Neue Light Italic';
   src: url('assets/fonts/HelveticaNeueLTStd-LtIt.otf');
 }
+@font-face {
+  font-family: 'Helvetica Neue Thin';
+  src: url('assets/fonts/HelveticaNeueLTStd-Th.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,700,900.css');
 
 #app-root-2024-unctad_homepage {
   font-family: 'Helvetica Neue Light';
