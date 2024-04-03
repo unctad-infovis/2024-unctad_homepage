@@ -63,8 +63,11 @@
         .row {
           .col {
             a {
+              border: 0;
               color: rgba(1,72, 136, 1.0);
+              display: inline;;
               font-family: Helvetica Neue Medium;
+              padding: 0;
               text-decoration: none;
               &:hover {
                 text-decoration: underline;
@@ -82,6 +85,10 @@
                 font-size: $titlesize_semibig;
               }
             }
+            li {
+              background-color: transparent;
+              font-family: Helvetica Neue Medium;
+            }
             .visual_list {
               display: flex;
               flex-wrap: wrap;
@@ -89,6 +96,7 @@
               margin: 0;
               padding: 0;
               li {
+                background-color: transparent;
                 display: inline-block;
                 margin-bottom: 20px;
                 width: calc(100% / 3);
@@ -111,7 +119,6 @@
           }
         }
       }
-
     }
   }
 }

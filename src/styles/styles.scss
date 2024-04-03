@@ -23,8 +23,16 @@ $titlesize_verysmall: 14px;
   src: url('assets/fonts/HelveticaNeueLTStd-Md.otf');
 }
 @font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url('assets/fonts/HelveticaNeueLTStd-Bd.otf');
+}
+@font-face {
   font-family: 'Helvetica Neue Light';
   src: url('assets/fonts/HelveticaNeueLTStd-Lt.otf');
+}
+@font-face {
+  font-family: 'Helvetica Neue Light Italic';
+  src: url('assets/fonts/HelveticaNeueLTStd-LtIt.otf');
 }
 
 #app-root-2024-unctad_homepage {
@@ -65,4 +73,5 @@ $titlesize_verysmall: 14px;
   @import './events_container.scss';
   @import './statements_container.scss';
   @import './share_container.scss';
+  @import './news_article_container.scss';
 }

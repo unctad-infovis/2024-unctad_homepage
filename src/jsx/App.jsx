@@ -15,6 +15,7 @@ import Media from './components/Media.jsx';
 import News from './components/News.jsx';
 import Events from './components/Events.jsx';
 import Statements from './components/Statements.jsx';
+import NewsArticle from './components/NewsArticle.jsx';
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        <NewsArticle />
       </div>
     </>
   );

@@ -96,7 +96,7 @@ const megaMenu = (name) => {
           </div>
           <div className="row">
             <div className="col col-7 left_column">
-              <h2>Featured publications</h2>
+              <h2>Featured</h2>
               <ul>
                 <li><a href="/publications-search?f%5B0%5D=product%3A588">Commodities and Development Report</a></li>
                 <li><a href="/publications-search?f%5B0%5D=product%3A598">Digital Economy Report</a></li>
@@ -137,7 +137,11 @@ const megaMenu = (name) => {
             <div className="col col-7 left_column">
               <h2>Featured</h2>
               <ul>
-                <li><a href="#link">Data visualization (to be created)</a></li>
+                <li>
+                  <a href="#link">Data visualization</a>
+                  {' '}
+                  to be created
+                </li>
                 <li>
                   <a href="https://unctadstat.unctad.org/">UNCTADstat</a>
                   <ul>
@@ -157,7 +161,7 @@ const megaMenu = (name) => {
                 <li><a href="/topic/least-developed-countries/productive-capacities-index">Productive Capacities Index</a></li>
                 <li><a href="https://sdgpulse.unctad.org/">SDG Pulse</a></li>
                 <li><a href="/publication/world-of-debt/dashboard">World of Debt Dashboard</a></li>
-                <li><a href="https://trainsonline.unctad.org/home">TRAINS Portal (trade regulations and non-tariff measures</a></li>
+                <li><a href="https://trainsonline.unctad.org/home">TRAINS Portal (trade regulations and non-tariff measures)</a></li>
               </ul>
             </div>
           </div>
