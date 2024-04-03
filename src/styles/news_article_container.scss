@@ -2,7 +2,6 @@
   margin-top: 100px;
   max-width: 800px;
   .title_container {
-
     h2 {
       font-family: Helvetica Neue Heavy;
       font-size: 44px;
@@ -29,9 +28,9 @@
       }
       figcaption {
         font-size: 16px;
-        color: #666;
+        color: #444;
         strong {
-          font-family: Helvetica Neue Medium;
+          font-family: Helvetica Neue Bold;
         }
       }
     }
@@ -45,9 +44,9 @@
       }
       figcaption {
         font-size: 16px;
-        color: #666;
+        color: #444;
         strong {
-          font-family: Helvetica Neue Medium;
+          font-family: Helvetica Neue Bold;
         }
       }
     }
@@ -61,11 +60,11 @@
     ol,
     p {
       font-family: Helvetica Neue Light;
-      font-size: 18px;
+      font-size: 19px;
       line-height: 26px;
       margin: 0 0 20px 0;
       strong {
-        font-family: Helvetica Neue Medium;
+        font-family: Helvetica Neue Bold;
       }
       em {
         font-family: Helvetica Neue Light Italic;
