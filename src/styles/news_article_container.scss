@@ -55,12 +55,19 @@
       font-size: 24px;
       line-height: 28px;
       margin: 0 0 20px 0;
+      ul,
+      ol {
+        font-family: Helvetica Neue Medium;
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
     ul,
     ol,
     p {
       font-family: Helvetica Neue Light;
-      font-size: 19px;
+      font-size: 18px;
+      letter-spacing: 0.2px;
       line-height: 28px;
       margin: 0 0 20px 0;
       strong {
@@ -70,9 +77,11 @@
         font-family: Helvetica Neue Light Italic;
       }
       a {
+        border-bottom: 1px solid #000;;
         color: #000;
-        text-decoration: underline;
+        text-decoration: none;
         &:hover {
+          border-bottom: 0;
           text-decoration: none;
         }
       }
@@ -132,13 +141,13 @@
         color: #444;
         strong {
           font-family: Inter;
-          font-weight: 700;;
+          font-weight: 700;
         }
       }
     }
     h4 {
       font-family: Inter;
-      font-weight: 700;;
+      font-weight: 700;
       font-size: 24px;
       line-height: 28px;
       margin: 0 0 20px 0;
@@ -159,7 +168,7 @@
       }
       a {
         color: #000;
-        text-decoration: underline;
+        text-decoration: none;
         &:hover {
           text-decoration: none;
         }

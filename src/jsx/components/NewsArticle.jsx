@@ -18,11 +18,13 @@ function App() {
         </figure>
       </div>
       <div className="content_container">
-        <ul>
-          <li>Biodiversity is declining at an alarming rate, with one million species at risk of extinction.</li>
-          <li>Trade can help protect biodiversity by promoting sustainability across the entire value chain.</li>
-          <li>Implementing “BioTrade” principles and criteria is key to safeguarding economic and social benefits on a healthy planet.</li>
-        </ul>
+        <h4>
+          <ul>
+            <li>Biodiversity is declining at an alarming rate, with one million species at risk of extinction.</li>
+            <li>Trade can help protect biodiversity by promoting sustainability across the entire value chain.</li>
+            <li>Implementing “BioTrade” principles and criteria is key to safeguarding economic and social benefits on a healthy planet.</li>
+          </ul>
+        </h4>
         <p>With one million species currently at risk of extinction, the state of global biodiversity loss spells trouble for nature and economies.</p>
         <p>The impact of losing bees and other wild pollinators, fisheries and forestry – just a fraction of natural resources at risk – could reduce global GDP by an estimated $2.7 trillion annually by 2030, according to World Bank simulations.</p>
         <p>Kicking off the 7th BioTrade Congress in Geneva, UNCTAD and partners gave a renewed push for stronger trade policies and governance to help tackle the biodiversity crisis.</p>
@@ -117,11 +119,13 @@ function App() {
         </figure>
       </div>
       <div className="content_container inter">
-        <ul>
-          <li>Biodiversity is declining at an alarming rate, with one million species at risk of extinction.</li>
-          <li>Trade can help protect biodiversity by promoting sustainability across the entire value chain.</li>
-          <li>Implementing “BioTrade” principles and criteria is key to safeguarding economic and social benefits on a healthy planet.</li>
-        </ul>
+        <h4>
+          <ul>
+            <li>Biodiversity is declining at an alarming rate, with one million species at risk of extinction.</li>
+            <li>Trade can help protect biodiversity by promoting sustainability across the entire value chain.</li>
+            <li>Implementing “BioTrade” principles and criteria is key to safeguarding economic and social benefits on a healthy planet.</li>
+          </ul>
+        </h4>
         <p>With one million species currently at risk of extinction, the state of global biodiversity loss spells trouble for nature and economies.</p>
         <p>The impact of losing bees and other wild pollinators, fisheries and forestry – just a fraction of natural resources at risk – could reduce global GDP by an estimated $2.7 trillion annually by 2030, according to World Bank simulations.</p>
         <p>Kicking off the 7th BioTrade Congress in Geneva, UNCTAD and partners gave a renewed push for stronger trade policies and governance to help tackle the biodiversity crisis.</p>
