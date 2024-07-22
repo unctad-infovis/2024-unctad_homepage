@@ -1,5 +1,7 @@
 //@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:600.css');
 // Import all of Bootstrap's CSS
+@import './reset.scss';
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 @import './colors.scss';
@@ -10,39 +12,9 @@ $titlesize_medium: 22px;
 $titlesize_small: 18px;
 $titlesize_verysmall: 14px;
 
-@font-face {
-  font-family: 'Helvetica Neue Heavy Condensed';
-  src: url('assets/fonts/HelveticaNeueLTStd-HvCn.otf');
-}
-@font-face {
-  font-family: 'Helvetica Neue Heavy';
-  src: url('assets/fonts/HelveticaNeueLTStd-Hv.otf');
-}
-@font-face {
-  font-family: 'Helvetica Neue Medium';
-  src: url('assets/fonts/HelveticaNeueLTStd-Md.otf');
-}
-@font-face {
-  font-family: 'Helvetica Neue Bold';
-  src: url('assets/fonts/HelveticaNeueLTStd-Bd.otf');
-}
-@font-face {
-  font-family: 'Helvetica Neue Light';
-  src: url('assets/fonts/HelveticaNeueLTStd-Lt.otf');
-}
-@font-face {
-  font-family: 'Helvetica Neue Light Italic';
-  src: url('assets/fonts/HelveticaNeueLTStd-LtIt.otf');
-}
-@font-face {
-  font-family: 'Helvetica Neue Thin';
-  src: url('assets/fonts/HelveticaNeueLTStd-Th.otf');
-}
-
-@import url('https://fonts.googleapis.com/css?family=Inter:300,400,700,900.css');
+@import './news_article_container.scss';
 
 #app-root-2024-unctad_homepage {
-  font-family: 'Helvetica Neue Light';
   .content {
     background-color: rgba(192, 208, 221, 1);
   }
@@ -64,7 +36,6 @@ $titlesize_verysmall: 14px;
   }
   h2 {
     font-size: $titlesize_big;
-    font-family: 'Helvetica Neue Heavy Condensed';
     font-weight: 600;
     margin: 20px 0 20px 0;
   }
@@ -79,5 +50,4 @@ $titlesize_verysmall: 14px;
   @import './events_container.scss';
   @import './statements_container.scss';
   @import './share_container.scss';
-  @import './news_article_container.scss';
 }
