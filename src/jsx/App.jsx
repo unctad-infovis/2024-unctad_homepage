@@ -16,7 +16,8 @@ import '../styles/styles.scss';
 // import News from './components/News.jsx';
 // import Events from './components/Events.jsx';
 // import Statements from './components/Statements.jsx';
-import NewsArticle from './components/NewsArticle.jsx';
+// import NewsArticle from './components/NewsArticle.jsx';
+import BrandPage from './components/BrandPage.jsx';
 
 function App() {
   return (
@@ -46,7 +47,8 @@ function App() {
             </div>
           </div>
         </div> */}
-        <NewsArticle />
+        <BrandPage />
+        {/* <NewsArticle /> */}
       </div>
     </>
   );

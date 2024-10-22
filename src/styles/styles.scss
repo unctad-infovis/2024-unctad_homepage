@@ -13,10 +13,9 @@ $titlesize_small: 18px;
 $titlesize_verysmall: 14px;
 
 @import './news_article_container.scss';
-
 #app-root-2024-unctad_homepage {
   .content {
-    background-color: rgba(192, 208, 221, 1);
+    // background-color: rgba(192, 208, 221, 1);
   }
   .with_border {
     &:after {
@@ -39,6 +38,7 @@ $titlesize_verysmall: 14px;
     font-weight: 600;
     margin: 20px 0 20px 0;
   }
+  @import './brandpage.scss';
   @import './top_bar.scss';
   @import './header_container.scss';
   @import './menu_container.scss';
