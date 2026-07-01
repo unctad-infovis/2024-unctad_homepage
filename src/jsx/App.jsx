@@ -6,28 +6,28 @@ import '../styles/styles.scss';
 // import * as bootstrap from 'bootstrap';
 
 // Load components.
-// import TopBar from './components/TopBar.jsx';
-// import Header from './components/Header.jsx';
-// import Menu from './components/Menu.jsx';
-// import Highlight from './components/Highlight.jsx';
-// import Publications from './components/Publications.jsx';
-// import Datavisualisations from './components/Datavisualisations.jsx';
-// import Media from './components/Media.jsx';
-// import News from './components/News.jsx';
-// import Events from './components/Events.jsx';
-// import Statements from './components/Statements.jsx';
+import TopBar from './components/TopBar.jsx';
+import Header from './components/Header.jsx';
+import Menu from './components/Menu.jsx';
+import Highlight from './components/Highlight.jsx';
+import Publications from './components/Publications.jsx';
+import Datavisualisations from './components/Datavisualisations.jsx';
+import Media from './components/Media.jsx';
+import News from './components/News.jsx';
+import Events from './components/Events.jsx';
+import Statements from './components/Statements.jsx';
 // import NewsArticle from './components/NewsArticle.jsx';
-import BrandPage from './components/BrandPage.jsx';
+// import BrandPage from './components/BrandPage.jsx';
 
 function App() {
   return (
     <>
-      {/* <TopBar /> */}
-      {/* <Header /> */}
-      {/* <Menu /> */}
-      {/* <Highlight /> */}
+      <TopBar />
+      <Header />
+      <Menu />
+      <Highlight />
       <div className="m-auto w-100">
-        {/* <div className="row container-xxl me-auto ms-auto">
+        <div className="row container-xxl me-auto ms-auto">
           <div className="col content pt-3">
             <div className="row m-auto background h-100">
               <div className="col">
@@ -46,8 +46,8 @@ function App() {
               </div>
             </div>
           </div>
-        </div> */}
-        <BrandPage />
+        </div>
+        {/* <BrandPage /> */}
         {/* <NewsArticle /> */}
       </div>
     </>
