@@ -12,7 +12,7 @@
             <li>
               <div>
                 <div>
-                  <a href="/about/office-of-the-secretary-general"><img src="https://unctad.org/sites/default/files/inline-images/Rebeca-Grynspan-2023_557x557.jpg" alt="Rebeca Grynspan"></a>
+                  <a href="/about/office-of-the-secretary-general"><img src={`${window.location.href.includes('unctad.org') ? 'https://storage.unctad.org/2024-unctad_homepage/' : './'}assets/img/Rebeca-Grynspan-2023_557x557.jpg`} alt="Rebeca Grynspan"></a>
                 </div>
                 <div>
                   <div>
@@ -27,7 +27,7 @@
             <li>
               <div>
                 <div>
-                  <a href="/about/office-of-the-secretary-general/deputy-secretary-general"><img src="https://unctad.org/sites/default/files/inline-images/UNCTAD-DSG_Pedro-Manuel-Moreno_official-photo_557x557_0.jpg" alt="Pedro Manuel-Moreno"></a>
+                  <a href="/about/office-of-the-secretary-general/deputy-secretary-general"><img src={`${window.location.href.includes('unctad.org') ? 'https://storage.unctad.org/2024-unctad_homepage/' : './'}assets/img/UNCTAD-DSG_Pedro-Manuel-Moreno_official-photo_557x557_0.jpg`} alt="Pedro Manuel-Moreno"></a>
                 </div>
                 <div>
                   <div>
@@ -42,7 +42,7 @@
             <li>
               <div>
                 <div>
-                  <a href="/publication/unctad-15-outcome-spirit-speightstown-and-bridgetown-covenant"><img src="https://unctad.org/sites/default/files/inline-images/ioss2022d1_143x143.jpg" alt="UNCTAD15"></a>
+                  <a href="/publication/unctad-15-outcome-spirit-speightstown-and-bridgetown-covenant"><img src={`${window.location.href.includes('unctad.org') ? 'https://storage.unctad.org/2024-unctad_homepage/' : './'}assets/img/ioss2022d1_143x143.jpg`} alt="UNCTAD15"></a>
                 </div>
                 <div>
                   <div>
@@ -54,7 +54,7 @@
             <li>
               <div>
                 <div>
-                  <a href="/publication/unctad-annual-report-20229"><img src="https://unctad.org/sites/default/files/inline-images/UNCTAD-annual-report-2022_148x148_2.jpg" alt="Annual Report 2022"></a>
+                  <a href="/publication/unctad-annual-report-20229"><img src={`${window.location.href.includes('unctad.org') ? 'https://storage.unctad.org/2024-unctad_homepage/' : './'}assets/img/UNCTAD-annual-report-2022_148x148_2.jpg`} alt="Annual Report 2022"></a>
                 </div>
                 <div>
                   <div>
@@ -66,7 +66,7 @@
             <li>
               <div>
                 <div>
-                  <a href="/system/files/official-document/UNCTAD-at-a-glance_en.pdf" target="_blank"><img src="https://unctad.org/sites/default/files/inline-images/2022-unctad-at-a-glance_143x143.jpg" alt="UNCTAD at a Glance"></a>
+                  <a href="/system/files/official-document/UNCTAD-at-a-glance_en.pdf" target="_blank"><img src={`${window.location.href.includes('unctad.org') ? 'https://storage.unctad.org/2024-unctad_homepage/' : './'}assets/img/2022-unctad-at-a-glance_143x143.jpg`} alt="UNCTAD at a Glance"></a>
                 </div>
                 <div>
                   <div>
