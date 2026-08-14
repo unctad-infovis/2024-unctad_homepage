@@ -1,13 +1,13 @@
-<div class="megamenu_container">
-  <div class="row">
-    <div class="megamenu_content p-3">
-      <div class="row">
-        <div class="col">
+<div className="megamenu_container">
+  <div className="row">
+    <div className="megamenu_content p-3">
+      <div className="row">
+        <div className="col">
           <h4>Our research and publications provide authoritative and evidence-based analysis on trade and development and policy recommendations to help countries tackle today’s biggest challenges.</h4>
         </div>
       </div>
-      <div class="row">
-        <div class="col col-7 left_column">
+      <div className="row">
+        <div className="col col-7 left_column">
           <h2>Featured</h2>
           <ul>
             <li><a href="/publications-search?f%5B0%5D=product%3A588">Commodities and Development Report</a></li>
@@ -22,7 +22,7 @@
           </ul>
           <p><a href="/publications-search">Publication search</a></p>
         </div>
-        <div class="col col-5 right_column">
+        <div className="col col-5 right_column">
           <h2>In focus</h2>
           <ul>
             <li><a href="/publications-search?f%5B0%5D=product%3A609">Global Investment Trends Monitor</a></li>
@@ -35,4 +35,4 @@
       </div>
     </div>
   </div>
-</div>
+</div>;
