@@ -61,7 +61,34 @@ module.exports = {
             }
           },
           {
-            loader: 'sass-loader'
+            // This project genuinely customizes Bootstrap's build (colors.scss,
+            // per-section container partials, nested selectors under
+            // #app-root-2024-unctad_homepage), so - unlike 2023-intranet -
+            // switching to Bootstrap's precompiled CSS isn't an option here.
+            // The ~270 Dart Sass deprecation warnings all originate inside
+            // node_modules/bootstrap/scss/* itself (legacy `@import`, global
+            // color functions), not this project's own .scss files. `quietDeps`
+            // silences deprecation warnings from files Sass considers
+            // dependencies (i.e. anything under node_modules) while still
+            // surfacing any real deprecation warning from this project's own
+            // stylesheets.
+            loader: 'sass-loader',
+            options: {
+              // Use Dart Sass's modern (promise-based) compiler API instead of
+              // sass-loader's default legacy-API shim, which is itself
+              // deprecated and logs a warning on every compile.
+              api: 'modern',
+              sassOptions: {
+                // quietDeps only recognizes a stylesheet as a "dependency" (and
+                // so silences its deprecation warnings) when it's resolved
+                // through a load path, not through a literal relative
+                // `../../node_modules/...` import - hence loadPaths here, paired
+                // with the package-style `@import 'bootstrap/scss/bootstrap'` in
+                // styles.scss below.
+                loadPaths: [path.resolve(__dirname, 'node_modules')],
+                quietDeps: true
+              }
+            }
           }
         ]
       },
